@@ -32,14 +32,16 @@ export const ProductCardImage = styled.div`
          height: 40%;
     }
 
-	img{
-		object-fit: cover;
-		height: 83%;
-		@media(max-width: ${({theme}) => theme.mobile}) {
-         height: 160%;
-    	}
-	}
+`
 
+export const StyledImage = styled.img`
+	object-fit: cover;
+	height: 83%;
+	width: auto;
+
+	@media(max-width: ${({theme}) => theme.mobile}) {
+        height: 160%;
+    }
 `
 
 export const ProductCardBody = styled.div`

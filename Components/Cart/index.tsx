@@ -1,5 +1,5 @@
 import { useCart } from '../../context/CartContext'
-import {CartBox, Title, Header, ClosingButton, TotalPriceBar ,  FooterButton , Footer, CartsBox, CartProductBox, ProductCartImage, Remove, CartProductTitle, CartProductPrice, Controls, AddedNumber} from './style'
+import {CartBox, Title, Header, ClosingButton, StyledImage, TotalPriceBar ,  FooterButton , Footer, CartsBox, CartProductBox, ProductCartImage, Remove, CartProductTitle, CartProductPrice, Controls, AddedNumber} from './style'
 import { FaTimes, FaAngleLeft , FaAngleRight } from "react-icons/fa";
 import { useState } from 'react';
 import Image from 'next/image';
@@ -25,7 +25,7 @@ const Cart=() => {
                                 <FaTimes></FaTimes>
                             </Remove>
                             <ProductCartImage>
-                                <Image src={product.photo} alt="product cart image"/>
+                                <StyledImage src={product.photo} alt="product cart image"/>
                             </ProductCartImage>
                             <CartProductTitle>{product.name}</CartProductTitle>
                             <Controls>

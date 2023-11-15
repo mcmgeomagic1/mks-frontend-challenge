@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useCart } from '../../context/CartContext'
-import {StyledProductCard, ProductCardImage, ProductCardBody, ProductTitle, ProductPrice, ProductButtonSection, ProductButton, CardDescription, CardDescriptionBox} from './style'
+import {StyledProductCard, StyledImage, ProductCardImage, ProductCardBody, ProductTitle, ProductPrice, ProductButtonSection, ProductButton, CardDescription, CardDescriptionBox} from './style'
 
 interface productProps {
  product: any
@@ -12,7 +12,7 @@ const Product: React.FC<productProps> =({product}) => {
 	return (
 		<StyledProductCard>
             <ProductCardImage>
-                <Image src={product.photo} alt="product image"/>
+                <StyledImage src={product.photo} alt="product image"/>
             </ProductCardImage>
             <ProductCardBody>
                 <ProductTitle>{product.name}</ProductTitle>

@@ -139,14 +139,20 @@ export const ProductCartImage = styled.div`
     }
 
 	img{
-		object-fit: cover;
-		height: 100%;
-		@media(max-width: ${({theme}) => theme.mobile}) {
-         height: 160%;
-		 margin-top: -.5em;
-    	}
+		
 	}
 
+`
+
+export const StyledImage = styled.img`
+	object-fit: cover;
+	width: auto;
+	height: 83%;
+	
+	@media(max-width: ${({theme}) => theme.mobile}) {
+         height: 160%;
+		 margin-top: -.5em;
+    }
 `
 
 export const CartProductTitle = styled.h3`
