@@ -6,7 +6,9 @@ import Product from "../Components/Product"
 import { Container } from '../styles/Container'
 import Cart from '../Components/Cart'
 import { useCart } from '../context/CartContext'
-import { useState } from 'react'
+import  Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 
 
 const Home: NextPage = () => { 
@@ -14,7 +16,18 @@ const Home: NextPage = () => {
   const {isCartOpen} = useCart()
 
   if(isLoading) {
-    return <Loading>Carregando...</Loading>;
+    return (
+      <>
+        <Menu/>
+        <Container>
+          <Loading>
+          <SkeletonTheme height="50px" duration={1} >
+            <Skeleton count={12}  />  
+          </SkeletonTheme> 
+          </Loading>
+        </Container>
+      </>
+    )
   }
 
   if (isError) {
