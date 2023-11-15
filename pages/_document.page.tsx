@@ -33,7 +33,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>SIGC</title>
           <Script src="//cdn.asprise.com/scannerjs/scanner.js" async></Script>
           {this.props.styles}
         </Head>

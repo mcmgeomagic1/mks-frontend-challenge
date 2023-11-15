@@ -32,8 +32,8 @@ const Home: NextPage = () => {
       <Container>
         <ProductsSection >
           {
-            products.map((product: any) => (       
-              <Product product={product}/>
+            products.map((product: any, index: number) => (       
+              <Product key={index} product={product}/>
             )) 
           }                             
         </ProductsSection >

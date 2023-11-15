@@ -88,6 +88,8 @@ export const Remove = styled.button`
 	cursor: pointer
 `
 
+
+
 export const CartsBox = styled.div`
 	height: 73%;
 	overflow: scroll;
