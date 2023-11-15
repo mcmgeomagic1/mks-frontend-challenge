@@ -2,7 +2,7 @@
 ## Shopping Cart Web app
 This is a simple and basic shopping cart web App which basically can list all the products and allows you to add a product in the cart. You can increase the quantity of the products and it shows the Total Price 
 
-[See the app](https://invoice-component.netlify.app)
+[See the app](https://mks-challenge-mario.netlify.app)
 
 ![readme](readme.png)
 
