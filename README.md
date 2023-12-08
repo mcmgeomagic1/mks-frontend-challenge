@@ -1,15 +1,14 @@
-# MKS FRNTEND CHALLENGE
-## Shopping Cart Web app
-This is a simple and basic shopping cart web App which basically can list all the products and allows you to add a product in the cart. You can increase the quantity of the products and it shows the Total Price 
+# Evaluation Task:
+##  Client SaaS Dashboard
+This is the repositorry of the Saas Dashboard that was asked as an evaluation task for the application process for the Front End Developer - Unpaid Intern position at Rayca Precisio
 
-[See the app](https://mks-challenge-mario.netlify.app)
+[Watch the ive Demo](https://screenapp.io/app/#/library/65729bb915265fd05c7b65f8/default/c3e4ea1e-b94b-4509-bef2-0689a3505181)
 
 ![readme](readme.png)
 
 ### Technologies
-* Next.js
+* React.js
 * React Hooks
-* React Query
 * Typescript
 * Styled-Components
 * React Context
@@ -26,7 +25,7 @@ This is a simple and basic shopping cart web App which basically can list all th
 
 ### Run
 ```Bash
-  npm run dev
+  npm start
 ```
 ---
 ---
